@@ -1,0 +1,90 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --font1: Bill;
+    --font2: MaoEscrita;
+    --font3: Arial ;
+}
+@font-face {
+    font-family: Bill;
+    src: url('../fontes/Bill/Billing-Lottre-Regular.otf') format(opentype);
+    font-size: 2em
+}
+@font-face {
+    font-family: MaoEscrita;
+    src: url('../fontes/MaoEscrita/PerfectBomberFreePersonalUse.ttf') format(opentype);
+    font-weight: lighter;
+}
+html body{
+    min-width: 10vh;
+    background-color: white;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header>h1{
+    padding: 50px 0px 0px 0px;
+    font-variant:small-caps;
+    font-family: var(--font2);
+    font-size: 10vh;
+}
+header > p{
+    padding: 0px 0px 50px ;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font1);
+    font-size: 4vh;
+}
+section >p{
+    padding-bottom: 1em;
+}
+section.imagem>p{
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.411);
+   padding: 15px;
+   text-shadow: 1px 1px 1px black;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: gray;
+    color: black;
+    box-shadow: inset 5px 2px 8px rgba(0, 0, 0, 0.464);
+}
+section#img1{
+    background: url("../imagens/background001.jpg") no-repeat right center fixed;
+    background-size: cover;
+}
+section#img2{
+    background: url("../imagens/background002.jpg") no-repeat right center fixed;
+    background-size: cover;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+footer p{
+    padding: 10px;
+}
+
