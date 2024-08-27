@@ -1,90 +1,109 @@
 @charset "UTF-8";
-*{
+
+* {
     padding: 0px;
     margin: 0px;
 }
-:root{
+
+:root {
     --font1: Bill;
     --font2: MaoEscrita;
-    --font3: Arial ;
+    --font3: Arial;
 }
+
 @font-face {
     font-family: Bill;
     src: url('../fontes/Bill/Billing-Lottre-Regular.otf') format(opentype);
     font-size: 2em
 }
+
 @font-face {
     font-family: MaoEscrita;
     src: url('../fontes/MaoEscrita/PerfectBomberFreePersonalUse.ttf') format(opentype);
     font-weight: lighter;
 }
-html body{
+
+html body {
     min-width: 10vh;
     background-color: white;
 }
-header{
+
+header {
     background-color: black;
     color: white;
     text-align: center;
 }
-header>h1{
+
+header>h1 {
     padding: 50px 0px 0px 0px;
-    font-variant:small-caps;
-    font-family: var(--font2);
+    font-variant: small-caps;
+    font-family: var(--font2), Cursive, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
     font-size: 10vh;
 }
-header > p{
-    padding: 0px 0px 50px ;
+
+header>p {
+    padding: 0px 0px 50px;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
     font-weight: 900;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-section{
+
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--font1);
+    font-family: var(--font1), Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     font-size: 4vh;
 }
-section >p{
+
+section>p {
     padding-bottom: 1em;
 }
-section.imagem>p{
+
+section.imagem>p {
     color: white;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.411);
-   padding: 15px;
-   text-shadow: 1px 1px 1px black;
+    padding: 15px;
+    text-shadow: 1px 1px 1px black;
 }
-.normal{
+
+.normal {
     background-color: white;
     color: black;
 }
-.imagem{
+
+.imagem {
     background-color: gray;
     color: black;
-    box-shadow: inset 5px 2px 8px rgba(0, 0, 0, 0.464);
 }
-section#img1{
+
+section#img1 {
     background: url("../imagens/background001.jpg") no-repeat right center fixed;
     background-size: cover;
 }
-section#img2{
+
+section#img2 {
     background: url("../imagens/background002.jpg") no-repeat right center fixed;
     background-size: cover;
 }
-footer{
+
+footer {
     background-color: black;
     text-align: center;
     color: white;
 }
-footer p{
+
+footer p {
     padding: 10px;
 }
-
